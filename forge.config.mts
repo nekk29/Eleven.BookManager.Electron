@@ -1,15 +1,24 @@
+import path from 'path';
 import { FusesPlugin } from '@electron-forge/plugin-fuses';
 import { FuseV1Options, FuseVersion } from '@electron/fuses';
+
+const iconPath = path.join(process.cwd(), 'public/assets/icons/app.png');
 
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon: iconPath,
+    executableName: "eleven.bookmanager.electron"
   },
   rebuildConfig: {},
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {},
+      config: {
+        options: {
+          icon: iconPath
+        }
+      },
     },
     {
       name: '@electron-forge/maker-zip',
@@ -19,13 +28,17 @@ module.exports = {
       name: '@electron-forge/maker-deb',
       config: {
         options: {
-          icon: '/src/assets/icons/app.png'
+          icon: iconPath
         }
       },
     },
     {
       name: '@electron-forge/maker-rpm',
-      config: {},
+      config: {
+        options: {
+          icon: iconPath
+        }
+      },
     },
   ],
   plugins: [
@@ -37,12 +50,12 @@ module.exports = {
         build: [
           {
             // `entry` is just an alias for `build.lib.entry` in the corresponding file of `config`.
-            entry: 'src/main.tsx',
+            entry: 'src/main.ts',
             config: 'vite.main.config.mts',
             target: 'main',
           },
           {
-            entry: 'src/preload.tsx',
+            entry: 'src/preload.ts',
             config: 'vite.preload.config.mts',
             target: 'preload',
           },

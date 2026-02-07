@@ -1,9 +1,9 @@
 import './index.css';
 import { createRoot } from 'react-dom/client';
-import LayoutComponent from './components/layout/LayoutComponent';
+import AppLayout from './components/layout/AppLayout';
 
 const App = () => {
-  return (<LayoutComponent />);
+  return (<AppLayout />);
 }
 
 const app = document.getElementById('app');

@@ -1,0 +1,30 @@
+.book-info {
+    height: 500px;
+    max-height: 500px;
+}
+
+.book-info-description {
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.book-info-description::-webkit-scrollbar {
+    width: 5px;
+    cursor: pointer;
+}
+
+.book-info-description::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.book-info-description::-webkit-scrollbar-thumb {
+    background: #a4a9b3;
+    border-radius: 10px;
+}
+
+.book-info-description::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: #b5bac4;
+    border-radius: 10px;
+}

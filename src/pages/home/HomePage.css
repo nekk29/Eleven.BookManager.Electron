@@ -1,0 +1,4 @@
+.home-label {
+    --rs-box-c: var(--rs-color-violet) !important;
+    color: var(--rs-box-c) !important;
+}

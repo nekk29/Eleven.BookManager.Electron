@@ -1,0 +1,4 @@
+.library-sync {
+    --rs-box-justify: flex-end !important;
+    justify-content: var(--rs-box-justify) !important;
+}

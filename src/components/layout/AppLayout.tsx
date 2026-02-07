@@ -1,4 +1,4 @@
-import './LayoutComponent.css';
+import './AppLayout.css';
 import FolderIcon from '@rsuite/icons/Folder';
 import SiteSettingIcon from '@rsuite/icons/SiteSetting';
 import HomePage from '../../pages/home/HomePage';
@@ -21,33 +21,32 @@ import {
 
 const Breadcrumbs = () => {
     const location = useLocation();
-    console.log(location.pathname);
 
     return (<Breadcrumb>
         <Breadcrumb.Item>Application</Breadcrumb.Item>
+        {location.pathname === '/' && <Breadcrumb.Item active>Home</Breadcrumb.Item>}
         {location.pathname === '/home' && <Breadcrumb.Item active>Home</Breadcrumb.Item>}
         {location.pathname === '/settings' && <Breadcrumb.Item active>Settings</Breadcrumb.Item>}
     </Breadcrumb>)
 };
 
-const LayoutComponent = () => {
-
+const AppLayout = () => {
     return (
         <CustomProvider theme="dark">
             <Container>
                 <Router>
-                    <Sidebar h="100vh" width={250} collapsible>
-                        <Sidenav w={250}>
+                    <Sidebar h="100vh" width={170} collapsible>
+                        <Sidenav w={170}>
                             <Sidenav.Header>
                                 <VStack p="10px 10px 0 10px" spacing={12}>
                                     <HStack>
                                         <Image
                                             rounded
-                                            src="src/assets/icons/book.png"
+                                            src="assets/icons/book.png"
                                             alt="My Library"
                                             width={32}
                                         />
-                                        <Tag size="lg">
+                                        <Tag size="lg" fontWeight="bold">
                                             My Library
                                         </Tag>
                                     </HStack>
@@ -84,4 +83,4 @@ const LayoutComponent = () => {
     );
 }
 
-export default LayoutComponent;
+export default AppLayout;

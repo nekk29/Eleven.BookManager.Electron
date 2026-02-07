@@ -1,0 +1,49 @@
+.library-alphabet .rs-table-cell-expand-wrapper {
+    float: right;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.library-alphabet .rs-table-cell-content {
+    padding-top: 10px;
+}
+
+.library-alphabet .rs-table-cell-content .library-alphabet-icon {
+    border-radius: 14px;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.library-icon .rs-table-cell-content {
+    padding: 10px 0px 0px 0px;
+}
+
+.library-label .rs-table-cell-content {
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+.library-label .bold {
+    font-weight: 600;
+}
+
+.library-label mark {
+    padding: 0px;
+    background-color: yellow;
+}
+
+.library-loader .rs-table-cell-content {
+    padding-top: 14px;
+}
+
+.library-status .rs-table-cell-content {
+    padding-top: 12px;
+}
+
+.library-actions .rs-table-cell-content {
+    padding: 8px 5px;
+}
+
+.library-paginator .rs-picker-toggle {
+    min-width: 95px;
+}

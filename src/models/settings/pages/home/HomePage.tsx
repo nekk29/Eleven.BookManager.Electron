@@ -1,4 +1,3 @@
-import './HomePage.css';
 import { useEffect } from 'react';
 import { Text, Grid, Row, Col } from 'rsuite';
 import Library from "../../components/home/Library";
@@ -17,7 +16,7 @@ const HomePage = () => {
             <Grid fluid>
                 <Row>
                     <Col span={24}>
-                        <Text className="home-label" size="3xl" weight="bold">Home</Text>
+                        <Text color="violet" size="3xl">Home</Text>
                     </Col>
                 </Row>
                 <Row mt={20}>

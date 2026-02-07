@@ -1,4 +1,3 @@
-import './SettingsPage.css';
 import { Text, Grid, Row, Col } from 'rsuite';
 import LibrarySettings from '../../components/settings/LibrarySettings';
 import CalibreSettings from '../../components/settings/CalibreSettings';
@@ -11,12 +10,12 @@ const SettingsPage = () => {
             <Grid fluid>
                 <Row>
                     <Col span={24}>
-                        <Text className="settings-label" size="3xl" weight="bold">Settings</Text>
+                        <Text color="violet" size="3xl">Settings</Text>
                     </Col>
                 </Row>
                 <Row mt={20}>
                     <Col span={24}>
-                        <Text className="settings-label" size="xl" weight="semibold">Library Settings</Text>
+                        <Text color="violet" size="xl">Library Settings</Text>
                     </Col>
                 </Row>
                 <Row mt={10}>
@@ -26,7 +25,7 @@ const SettingsPage = () => {
                 </Row>
                 <Row mt={20}>
                     <Col span={24}>
-                        <Text className="settings-label" size="xl" weight="semibold">Calibre Settings</Text>
+                        <Text color="violet" size="xl">Calibre Settings</Text>
                     </Col>
                 </Row>
                 <Row mt={10}>
@@ -36,7 +35,7 @@ const SettingsPage = () => {
                 </Row>
                 <Row mt={20}>
                     <Col span={24}>
-                        <Text className="settings-label" size="xl" weight="semibold">Amazon Settings</Text>
+                        <Text color="violet" size="xl">Amazon Settings</Text>
                     </Col>
                 </Row>
                 <Row mt={10}>
@@ -46,7 +45,7 @@ const SettingsPage = () => {
                 </Row>
                 <Row mt={20}>
                     <Col span={24}>
-                        <Text className="settings-label" size="xl" weight="semibold">SMTP Settings</Text>
+                        <Text color="violet" size="xl">SMTP Settings</Text>
                     </Col>
                 </Row>
                 <Row mt={10}>
